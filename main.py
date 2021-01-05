@@ -1,10 +1,3 @@
-# 🌴 EZ Qt
-
-EZ Qt is a simple collection of helper functions for PySide/PyQt widgets. 
-
-## Example
-
-```python
 import sys
 from PySide2.QtWidgets import *
 import ez_qt
@@ -72,5 +65,3 @@ if __name__ == '__main__':
     form = Form()
     form.show()
     sys.exit(app.exec_())
-
-```

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ez_qt',
-    version='1.0.6',
+    version='1.0.7',
     packages=['ez_qt'],
     url='https://www.github.com/nielsvaes/ez_qt',
     long_description=long_description,
