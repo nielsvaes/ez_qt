@@ -1,4 +1,4 @@
-import combo_box
-import list_widget
-import tree_widget
-import general
+from . import combo_box
+from . import list_widget
+from . import tree_widget
+from . import general
