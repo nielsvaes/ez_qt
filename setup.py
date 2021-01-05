@@ -4,10 +4,10 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='qt_ez',
-    version='1.0',
+    name='ez_qt',
+    version='1.0.4',
     packages=['ez_qt'],
-    url='www.github.com/nielsvaes/ez_qt',
+    url='https://www.github.com/nielsvaes/ez_qt',
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
