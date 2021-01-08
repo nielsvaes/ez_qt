@@ -2,6 +2,10 @@
 
 EZ Qt is a simple collection of helper functions for PySide/PyQt widgets. 
 
+## Installation
+
+`pip install ez_qt`
+
 ## Setting themes for your app
 
 You can use `app_colors` to style the colors of your app. The accent colors can be set as either a `QColor`, or you can use `ez_qt.constants.AccentColors`
