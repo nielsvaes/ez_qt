@@ -23,7 +23,7 @@ import ez_qt
 my_background_color = ez_qt.k.BackgroundColors.dark_gray
 ```
 
-## Example
+## Various Examples
 
 ```python
 import sys
