@@ -2,6 +2,23 @@
 
 EZ Qt is a simple collection of helper functions for PySide/PyQt widgets. 
 
+## Setting themes for your app
+
+You can use `app_colors` to style the colors of your app. The accent colors can be set as either a `QColor`, or you can use `ez_qt.constants.AccentColors`
+
+![Screenshot](screenshots/medium_orange.png)
+![Screenshot](screenshots/light_teal.png)
+
+## Constants
+
+You can use the short notation `k` to use the constants in this package. 
+
+```python
+import ez_qt
+
+my_background_color = ez_qt.k.BackgroundColors.dark_gray
+```
+
 ## Example
 
 ```python
@@ -69,6 +86,9 @@ class Form(QDialog):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    # set the colors for our app
+    # ez_qt.app_colors.set_medium_theme(app, accent_color=ez_qt.k.AccentColors.medium_pink)
+    ez_qt.app_colors.set_dark_theme(app, accent_color=ez_qt.k.AccentColors.medium_pink)
     form = Form()
     form.show()
     sys.exit(app.exec_())
