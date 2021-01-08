@@ -1,11 +1,19 @@
 from .constants import BackgroundColors, AccentColors
-from PySide2.QtGui import QPalette
-from PySide2.QtCore import Qt
+try:
+    from PySide2.QtCore import *
+    from PySide2.QtUiTools import *
+    from PySide2.QtGui import *
+    from PySide2.QtWidgets import *
+except:
+    from PyQt5.QtCore import *
+    from PyQt5.QtUiTools import *
+    from PyQt5.QtGui import *
+    from PyQt5.QtWidgets import *
 
-def set_dark_theme(q_app, accent_color=AccentColors.medium_blue):
+def set_dark_theme(q_app, accent_color=AccentColors.medium_blue, accent_buttons=True):
     palette = QPalette()
-    palette.setColor(QPalette.Window, BackgroundColors.medium_gray)
-    palette.setColor(QPalette.WindowText, Qt.white)
+    palette.setColor(QPalette.Window, BackgroundColors.dark_gray)
+    palette.setColor(QPalette.WindowText, BackgroundColors.bright_gray)
     palette.setColor(QPalette.Base, BackgroundColors.dark_gray)
     palette.setColor(QPalette.AlternateBase, BackgroundColors.medium_gray)
     palette.setColor(QPalette.Highlight, accent_color)
@@ -13,8 +21,8 @@ def set_dark_theme(q_app, accent_color=AccentColors.medium_blue):
     palette.setColor(QPalette.Text, BackgroundColors.bright_gray)
     palette.setColor(QPalette.Button, BackgroundColors.medium_gray)
     palette.setColor(QPalette.ToolTipBase, Qt.black)
-    palette.setColor(QPalette.ToolTipText, Qt.white)
-    palette.setColor(QPalette.ButtonText, Qt.white)
+    palette.setColor(QPalette.ToolTipText, BackgroundColors.bright_gray)
+    palette.setColor(QPalette.ButtonText, BackgroundColors.bright_gray)
     palette.setColor(QPalette.BrightText, Qt.red)
     palette.setColor(QPalette.Link, AccentColors.medium_blue)
 
