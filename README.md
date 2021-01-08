@@ -4,7 +4,7 @@ EZ Qt is a simple collection of helper functions for PySide/PyQt widgets.
 
 ## Installation
 
-`pip install ez_qt`
+`pip install ez-qt`
 
 ## Setting themes for your app
 
