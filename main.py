@@ -33,6 +33,7 @@ class Form(QDialog):
 
         # adding a list widget
         self.lw_items = QListWidget()
+        self.lw_items.setAlternatingRowColors(True)
 
         # Let's add the list we gathered earlier and add it to the list widget
         ez_qt.list_widget.add_items(self.lw_items, items=all_geography)
@@ -64,4 +65,7 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     form = Form()
     form.show()
+    ez_qt.app_colors.set_dark_theme(app, accent_color=ez_qt.k.AccentColors.medium_pink)
+    ez_qt.app_colors.set_medium_theme(app, accent_color=ez_qt.k.AccentColors.medium_orange)
+    # ez_qt.app_colors.set_light_theme(app, accent_color=ez_qt.k.AccentColors.light_teal)
     sys.exit(app.exec_())
