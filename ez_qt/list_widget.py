@@ -80,7 +80,7 @@ def get_all_items(list_widget, as_string=True):
             if item is not None:
                 items.append(item)
     else:
-        for item in range(list_widget.count()):
-            items.append(item)
+        for i in range(list_widget.count()):
+            items.append(list_widget.item(i))
 
     return items
