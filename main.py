@@ -1,5 +1,5 @@
 import sys
-from PySide2.QtWidgets import *
+from PySide6.QtWidgets import *
 import ez_qt
 
 class Form(QDialog):

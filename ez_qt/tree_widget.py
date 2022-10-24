@@ -1,8 +1,8 @@
 try:
-    from PySide2.QtCore import *
-    from PySide2.QtUiTools import *
-    from PySide2.QtGui import *
-    from PySide2.QtWidgets import *
+    from PySide6.QtCore import *
+    from PySide6.QtUiTools import *
+    from PySide6.QtGui import *
+    from PySide6.QtWidgets import *
 except:
     from PyQt5.QtCore import *
     from PyQt5.QtUiTools import *

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ez_qt',
-    version='1.1.2',
+    version='2.0.0',
     packages=['ez_qt'],
     url='https://www.github.com/nielsvaes/ez_qt',
     long_description=long_description,
@@ -13,5 +13,5 @@ setup(
     license='MIT',
     author='Niels Vaes',
     author_email='nielsvaes@gmail.com',
-    description='Helper functions and classes to work with PySide2/PyQt5'
+    description='Helper functions and classes to work with PySide6/PyQt5'
 )

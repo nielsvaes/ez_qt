@@ -27,7 +27,7 @@ my_background_color = ez_qt.k.BackgroundColors.dark_gray
 
 ```python
 import sys
-from PySide2.QtWidgets import *
+from PySide6.QtWidgets import *
 import ez_qt
 
 class Form(QDialog):
